@@ -1949,6 +1949,64 @@ parse_htmlblock(struct buf *ob, struct sd_markdown *rndr, uint8_t *data, size_t 
 			}
 		}
 
+		/* mdp:pagebreak */
+		if (size > 15 && (data[1] == 'm' || data[1] == 'M') && (data[2] == 'd' || data[2] == 'D') && (data[3] == 'p' || data[3] == 'P') && (data[4] == ':' || data[4] == ':') && (data[5] == 'p' || data[5] == 'P') && (data[6] == 'a' || data[6] == 'A') && (data[7] == 'g' || data[7] == 'G') && (data[8] == 'e' || data[8] == 'E') && (data[9] == 'b' || data[9] == 'B') && (data[10] == 'r' || data[10] == 'R') && (data[11] == 'e' || data[11] == 'E') && (data[12] == 'a' || data[12] == 'A') && (data[13] == 'k' || data[13] == 'K')) {
+			i = 14;
+			while (i < size && data[i] != '>')
+				i++;
+
+			if (i + 1 < size) {
+				i++;
+				j = is_empty(data + i, size - i);
+				if (j) {
+					work.size = i + j;
+					if (do_render && rndr->cb.blockhtml)
+						rndr->cb.blockhtml(ob, &work, rndr->opaque);
+					return work.size;
+				}
+			}
+
+		}
+
+		/* mdp:nu */
+		if (size > 8 && (data[1] == 'm' || data[1] == 'M') && (data[2] == 'd' || data[2] == 'D') && (data[3] == 'p' || data[3] == 'P') && (data[4] == ':' || data[4] == ':') && (data[5] == 'n' || data[5] == 'N') && (data[6] == 'u' || data[6] == 'U')) {
+			i = 7;
+			while (i < size && data[i] != '>')
+				i++;
+
+			if (i + 1 < size) {
+				i++;
+				j = is_empty(data + i, size - i);
+				if (j) {
+					work.size = i + j;
+					if (do_render && rndr->cb.blockhtml)
+						rndr->cb.blockhtml(ob, &work, rndr->opaque);
+					return work.size;
+				}
+			}
+
+		}
+
+		/* mdp:section */
+		if (size > 13 && (data[1] == 'm' || data[1] == 'M') && (data[2] == 'd' || data[2] == 'D') && (data[3] == 'p' || data[3] == 'P') && (data[4] == ':' || data[4] == ':') && (data[5] == 's' || data[5] == 'S') && (data[6] == 'e' || data[6] == 'E') && (data[7] == 'c' || data[7] == 'C') && (data[8] == 't' || data[8] == 'T') && (data[9] == 'i' || data[9] == 'I') && (data[10] == 'o' || data[10] == 'O') && (data[11] == 'n' || data[11] == 'N')) {
+			i = 12;
+			while (i < size && data[i] != '>')
+				i++;
+
+			if (i + 1 < size) {
+				i++;
+				j = is_empty(data + i, size - i);
+				if (j) {
+					work.size = i + j;
+					if (do_render && rndr->cb.blockhtml)
+						rndr->cb.blockhtml(ob, &work, rndr->opaque);
+					return work.size;
+				}
+			}
+
+		}
+
+
 		/* no special case recognised */
 		return 0;
 	}
