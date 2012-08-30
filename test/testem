@@ -1,1 +1,25 @@
- for i in *.text; do  s2="${i%.text}"; ../sundown.exe "$i" > a; cp "$s2.html" b; diff -Nup a b ; done
+#!/bin/bash
+ 
+for i in *.text
+do  
+	s2="${i%.text}"
+	html="$s2.html"
+	cp "$html" a
+
+	../sundown.exe "$i" > b
+	c=$(diff -Nup a b)
+	if [ -z "$c" ] 
+	then
+		echo PASS "."
+	else
+		cat <<EOF > fixme	
+
+--=-=-=-=-=-=-=-=-=-- 
+FAIL $i 
+EOF
+		diff -Nup a b >> fixme
+		vim -O "$html" fixme "$i"
+
+	fi
+
+done
