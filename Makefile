@@ -35,7 +35,7 @@ SUNDOWN_SRC=\
 	html/houdini_html_e.o \
 	html/houdini_href_e.o
 
-all:		libsundown.so sundown smartypants html_blocks
+all:		libsundown.so sundown smartypants mkepub html_blocks 
 
 .PHONY:		all clean
 
@@ -50,6 +50,9 @@ libsundown.so.1: $(SUNDOWN_SRC)
 # executables
 
 sundown:	examples/sundown.o $(SUNDOWN_SRC)
+	$(CC) $(LDFLAGS) $^ -o $@
+
+mkepub:		examples/mkepub.o $(SUNDOWN_SRC)
 	$(CC) $(LDFLAGS) $^ -o $@
 
 smartypants: examples/smartypants.o $(SUNDOWN_SRC)
