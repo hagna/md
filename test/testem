@@ -1,0 +1,1 @@
+ for i in *.text; do  s2="${i%.text}"; ../sundown.exe "$i" > a; cp "$s2.html" b; diff -Nup a b ; done

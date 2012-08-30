@@ -1,0 +1,7 @@
+<foo>
+<foo <bar|zot>>
+<foo|zot>
+<foo <bar|zot> |quux>
+<foo|Hey, [quux]!>
+<foo|AT&T you will>
+<foo|<bar|zot>>
