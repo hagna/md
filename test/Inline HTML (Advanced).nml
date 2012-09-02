@@ -1,0 +1,15 @@
+<p | Simple block on one line:>
+
+<div | foo>
+
+<p | And nested without indentation:>
+
+<div | 
+<div | 
+<div | 
+foo
+>
+
+<p >
+<div | bar>
+>>

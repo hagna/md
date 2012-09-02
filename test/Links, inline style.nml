@@ -1,0 +1,9 @@
+<p <href|/url/> | Just a <a | URL>.>
+
+<p <href|/url/> <title|title> <a | URL and title>.>
+
+<p <href|/url/> <title|title> <precede|preceded> <b|by> <tw|two> <spaces|spaces> <a | URL and title>.>
+
+<p <href|/url/> <title|title> <precede|preceded> <b|by> <|a> <tab|tab> <a | URL and title>.>
+
+<p <href|> <a | Empty>.>

@@ -1,0 +1,71 @@
+<p | Here&#39;s a simple block:>
+
+<div | 
+    foo
+>
+
+<p | This should be a code block, though:>
+
+<pre | <code | &lt;div&gt;
+    foo
+&lt;/div&gt;
+>>
+
+<p | As should this:>
+
+<pre | <code | &lt;div&gt;foo&lt;/div&gt;
+>>
+
+<p | Now, nested:>
+
+<div | 
+    <div | 
+        <div | 
+            foo
+        >
+    >
+>
+
+<p | This should just be an HTML comment:>
+
+<!--| Comment >>
+
+<p | Multiline:>
+
+<!--| Blah
+Blah
+>>
+
+<p | Code block:>
+
+<pre | <code | &lt;!-- Comment --&gt;
+>>
+
+<p | Just plain comment, with trailing spaces on the line:>
+
+<!--| foo >>   
+
+<p | Code:>
+
+<pre | <code | &lt;hr /&gt;
+>>
+
+<p | Hr&#39;s:>
+
+<hr | 
+
+<hr/ <|/> | 
+
+<hr | 
+
+<hr |    
+
+<hr/ <|/> |   
+
+<hr <class|foo> <id|bar> <|/> |  
+
+<hr <class|foo> <id|bar/> | 
+
+<hr <class|foo> <id|bar> | 
+
+<hr 

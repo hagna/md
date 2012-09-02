@@ -1,0 +1,18 @@
+<p <href|http://example.com/> | Link: <a | http://example.com/>.>
+
+<p <href|http://example.com/?foo=1&amp;bar=2> | With an ampersand: <a | http://example.com/?foo=1&amp;bar=2>>
+
+<ul | 
+<li | In a list?>
+<li <href|http://example.com/> <a | http://example.com/>>
+<li | It should.>
+>
+
+<blockquote | 
+<p <href|http://example.com/> | Blockquoted: <a | http://example.com/>>
+>
+
+<p | Auto-links should not occur here: <code | &lt;http://example.com/&gt;>>
+
+<pre | <code | or here: &lt;http://example.com/&gt;
+>>

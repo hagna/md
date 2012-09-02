@@ -1,0 +1,18 @@
+<p <href|/url/> <title|Title> | Foo <a | bar>.>
+
+<p <href|/url/> <title|Title> | Foo <a | bar>.>
+
+<p <href|/url/> <title|Title> | Foo <a | bar>.>
+
+<p <href|/url/> | With <a | embedded [brackets]>.>
+
+<p <href|/url> | Indented <a | once>.>
+
+<p <href|/url> | Indented <a | twice>.>
+
+<p <href|/url> | Indented <a | thrice>.>
+
+<p | Indented [four][] times.>
+
+<pre | <code | [four]: /url
+>>

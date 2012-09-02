@@ -1,0 +1,17 @@
+<p | AT&amp;T has an ampersand in their name.>
+
+<p | AT&amp;T is another way to write it.>
+
+<p | This &amp; that.>
+
+<p | 4 &lt; 5.>
+
+<p | 6 &gt; 5.>
+
+<p <href|http://example.com/?foo=1&amp;bar=2> | Here&#39;s a <a | link> with an ampersand in the URL.>
+
+<p <href|http://att.com/> <title|AT&amp;T> | Here&#39;s a link with an amersand in the link text: <a | AT&amp;T>.>
+
+<p <href|/script?foo=1&amp;bar=2> | Here&#39;s an inline <a | link>.>
+
+<p <href|/script?foo=1&amp;bar=2> | Here&#39;s an inline <a | link>.>

@@ -1,0 +1,15 @@
+<blockquote | 
+<p | Example:>
+
+<pre | <code | sub status {
+    print &quot;working&quot;;
+}
+>>
+
+<p | Or:>
+
+<pre | <code | sub status {
+    return &quot;working&quot;;
+}
+>>
+>
