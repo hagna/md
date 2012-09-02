@@ -1,0 +1,159 @@
+**found block tag "table" in "<table <attr1|val1>| this *emphasis* <div | something stellar> not added is the contents>
+
+
+> this is a block quote still though
+> and so is this
+
+
+<table|
+ <td|bar bar bar>
+ <td|but this time on a line alone>
+ <td| once again <div|no *emphasis*>>
+>
+
+
+> another block quote
+
+# a heading
+
+
+<table
+    <some bad nml here>
+
+
+<table|
+    <td|followed>
+    <td|by>
+    <td|good>
+>
+
+<table>
+
+<table<foo|bar><bar|high>>
+
+<table<foo|bar><bar|high>|some content here>
+
+
+*emphasis*
+"
+**found block tag "table" in "<table|
+ <td|bar bar bar>
+ <td|but this time on a line alone>
+ <td| once again <div|no *emphasis*>>
+>
+
+
+> another block quote
+
+# a heading
+
+
+<table
+    <some bad nml here>
+
+
+<table|
+    <td|followed>
+    <td|by>
+    <td|good>
+>
+
+<table>
+
+<table<foo|bar><bar|high>>
+
+<table<foo|bar><bar|high>|some content here>
+
+
+*emphasis*
+"
+**found block tag "table" in "<table
+    <some bad nml here>
+
+
+<table|
+    <td|followed>
+    <td|by>
+    <td|good>
+>
+
+<table>
+
+<table<foo|bar><bar|high>>
+
+<table<foo|bar><bar|high>|some content here>
+
+
+*emphasis*
+"
+**found block tag "table" in "<table|
+    <td|followed>
+    <td|by>
+    <td|good>
+>
+
+<table>
+
+<table<foo|bar><bar|high>>
+
+<table<foo|bar><bar|high>|some content here>
+
+
+*emphasis*
+"
+**found block tag "table" in "<table>
+
+<table<foo|bar><bar|high>>
+
+<table<foo|bar><bar|high>|some content here>
+
+
+*emphasis*
+"
+**found block tag "table" in "<table<foo|bar><bar|high>>
+
+<table<foo|bar><bar|high>|some content here>
+
+
+*emphasis*
+"
+**found block tag "table" in "<table<foo|bar><bar|high>|some content here>
+
+
+*emphasis*
+"
+<table <attr1|val1>| this *emphasis* <div | something stellar> not added is the contents>
+
+<blockquote>
+<p>this is a block quote still though
+and so is this</p>
+</blockquote>
+
+<table|
+ <td|bar bar bar>
+ <td|but this time on a line alone>
+ <td| once again <div|no *emphasis*>>
+>
+
+<blockquote>
+<p>another block quote</p>
+</blockquote>
+
+<h1>a heading</h1>
+
+<p><table
+    <some bad nml here></p>
+
+<table|
+    <td|followed>
+    <td|by>
+    <td|good>
+>
+
+<table>
+
+<table<foo|bar><bar|high>>
+
+<table<foo|bar><bar|high>|some content here>
+
+<p><em>emphasis</em></p>

@@ -1,0 +1,37 @@
+<table <attr1|val1>| this *emphasis* <div | something stellar> not added is the contents>
+
+
+> this is a block quote still though
+> and so is this
+
+
+<table|
+ <td|bar bar bar>
+ <td|but this time on a line alone>
+ <td| once again <div|no *emphasis*>>
+>
+
+
+> another block quote
+
+# a heading
+
+
+<table
+	<some bad nml here>
+
+
+<table|
+	<td|followed>
+	<td|by>
+	<td|good>
+>
+
+<table>
+
+<table<foo|bar><bar|high>>
+
+<table<foo|bar><bar|high>|some content here>
+
+
+*emphasis*

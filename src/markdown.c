@@ -1903,7 +1903,7 @@ parse_htmlblock(struct buf *ob, struct sd_markdown *rndr, uint8_t *data, size_t 
 		return 0;
 
 	i = 1;
-	while (i < size && data[i] != '|' && data[i] != ' ' && data[i] != '\n')
+	while (i < size && data[i] != '|' && data[i] != ' ' && data[i] != '<' && data[i] != '>' && data[i] != '\n')
 		i++;
 
 	if (i < size) { 
@@ -1942,11 +1942,11 @@ parse_htmlblock(struct buf *ob, struct sd_markdown *rndr, uint8_t *data, size_t 
 	/* looking for an unindented matching closing tag */
 	/*	followed by a blank line */
 	while (i < size && start_tags != 0) {
-		i++;
 		if (data[i] == '<')
 			start_tags += 1;
 		if (data[i] == '>')
 			start_tags -= 1;	
+		i++;
 	}
 	if (i < size) {
 		tag_end = i+1;
