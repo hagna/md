@@ -1908,12 +1908,10 @@ parse_htmlblock(struct buf *ob, struct sd_markdown *rndr, uint8_t *data, size_t 
 
 	if (i < size) { 
 		curtag = find_block_tag((char *)data + 1, (int)i - 1);
-		printf("**found block tag \"%s\" in \"%s\"\n", curtag, (char *)data);
 	}
 
 	/* handling of special cases */
 	if (!curtag) {
-		printf("did not find block tag in \"%s\"\n", (char *)data);
 		/* HTML comment, laxist form */
 		if (size > 5 && data[1] == '!' && data[2] == '-' && data[3] == '-') {
 			i = 5;
