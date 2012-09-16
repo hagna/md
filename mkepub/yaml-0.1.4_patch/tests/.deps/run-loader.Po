@@ -1,0 +1,27 @@
+run-loader.o: run-loader.c ../include/yaml.h \
+ e:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/stdlib.h \
+ e:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/_mingw.h \
+ e:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/stddef.h \
+ e:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/stdio.h \
+ e:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/stdarg.h \
+ e:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/sys/types.h \
+ e:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/string.h \
+ e:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/assert.h
+
+../include/yaml.h:
+
+e:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/stdlib.h:
+
+e:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/_mingw.h:
+
+e:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/stddef.h:
+
+e:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/stdio.h:
+
+e:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/stdarg.h:
+
+e:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/sys/types.h:
+
+e:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/string.h:
+
+e:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/assert.h:
